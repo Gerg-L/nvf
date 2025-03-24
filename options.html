@@ -2621,6 +2621,54 @@ anything</p>
 </dd>
 <dt>
  <span class="term">
+ <a id="opt-vim.autocomplete.blink-cmp.setupOpts.cmdline.keymap"></a><a class="term" href="options.html#opt-vim.autocomplete.blink-cmp.setupOpts.cmdline.keymap"><code class="option">vim.autocomplete.blink-cmp.setupOpts.cmdline.keymap</code>
+  </a>
+ </span>
+</dt>
+<dd>
+<p>blink.cmp cmdline keymap</p>
+
+<p><span class="emphasis"><em>Type:</em></span>
+attribute set of list of (string or (luaInline))</p>
+
+<p><span class="emphasis"><em>Default:</em></span>
+<code class="literal">{ }</code></p>
+
+<p><span class="emphasis"><em>Declared by:</em></span></p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td>
+<code class="filename"><a class="filename"  href="https://github.com/NotAShelf/nvf/blob/main/modules/plugins/completion/blink-cmp/blink-cmp.nix" target="_top">
+&lt;nvf/modules/plugins/completion/blink-cmp/blink-cmp.nix&gt;
+</a></code>
+</td></tr>
+</table>
+</dd>
+<dt>
+ <span class="term">
+ <a id="opt-vim.autocomplete.blink-cmp.setupOpts.cmdline.keymap.preset"></a><a class="term" href="options.html#opt-vim.autocomplete.blink-cmp.setupOpts.cmdline.keymap.preset"><code class="option">vim.autocomplete.blink-cmp.setupOpts.cmdline.keymap.preset</code>
+  </a>
+ </span>
+</dt>
+<dd>
+<p>keymap presets</p>
+
+<p><span class="emphasis"><em>Type:</em></span>
+one of “default”, “none”, “super-tab”, “enter”</p>
+
+<p><span class="emphasis"><em>Default:</em></span>
+<code class="literal">&quot;none&quot;</code></p>
+
+<p><span class="emphasis"><em>Declared by:</em></span></p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td>
+<code class="filename"><a class="filename"  href="https://github.com/NotAShelf/nvf/blob/main/modules/plugins/completion/blink-cmp/blink-cmp.nix" target="_top">
+&lt;nvf/modules/plugins/completion/blink-cmp/blink-cmp.nix&gt;
+</a></code>
+</td></tr>
+</table>
+</dd>
+<dt>
+ <span class="term">
  <a id="opt-vim.autocomplete.blink-cmp.setupOpts.cmdline.sources"></a><a class="term" href="options.html#opt-vim.autocomplete.blink-cmp.setupOpts.cmdline.sources"><code class="option">vim.autocomplete.blink-cmp.setupOpts.cmdline.sources</code>
   </a>
  </span>
@@ -2693,12 +2741,65 @@ signed integer</p>
 </dd>
 <dt>
  <span class="term">
+ <a id="opt-vim.autocomplete.blink-cmp.setupOpts.completion.menu.auto_show"></a><a class="term" href="options.html#opt-vim.autocomplete.blink-cmp.setupOpts.completion.menu.auto_show"><code class="option">vim.autocomplete.blink-cmp.setupOpts.completion.menu.auto_show</code>
+  </a>
+ </span>
+</dt>
+<dd>
+<p>Manages the appearance of the completion menu. You may prevent the menu
+from automatically showing by this option to <code class="literal">false</code> and manually showing
+it with the show keymap command.</p>
+
+<p><span class="emphasis"><em>Type:</em></span>
+boolean</p>
+
+<p><span class="emphasis"><em>Default:</em></span>
+<code class="literal">true</code></p>
+
+<p><span class="emphasis"><em>Declared by:</em></span></p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td>
+<code class="filename"><a class="filename"  href="https://github.com/NotAShelf/nvf/blob/main/modules/plugins/completion/blink-cmp/blink-cmp.nix" target="_top">
+&lt;nvf/modules/plugins/completion/blink-cmp/blink-cmp.nix&gt;
+</a></code>
+</td></tr>
+</table>
+</dd>
+<dt>
+ <span class="term">
+ <a id="opt-vim.autocomplete.blink-cmp.setupOpts.fuzzy.implementation"></a><a class="term" href="options.html#opt-vim.autocomplete.blink-cmp.setupOpts.fuzzy.implementation"><code class="option">vim.autocomplete.blink-cmp.setupOpts.fuzzy.implementation</code>
+  </a>
+ </span>
+</dt>
+<dd>
+<p>fuzzy matcher implementation for Blink.</p><div class="itemizedlist"><ul class="itemizedlist " style="list-style-type: disc;"><li class="listitem"><p><code class="literal">&quot;lua&quot;</code>: slower, Lua native fuzzy matcher implementation</p></li><li class="listitem"><p>`“rust”: use the SIMD fuzzy matcher, ‘frizbee’</p></li><li class="listitem"><p><code class="literal">&quot;prefer_rust&quot;</code>: use the rust implementation, but fall back to lua</p></li><li class="listitem"><p><code class="literal">&quot;prefer_rust_with_warning&quot;</code>: use the rust implementation, and fall back to lua
+if it is not available after emitting a warning.</p></li></ul></div>
+
+<p><span class="emphasis"><em>Type:</em></span>
+one of “lua”, “prefer_rust”, “rust”, “prefer_rust_with_warning”</p>
+
+<p><span class="emphasis"><em>Default:</em></span>
+<code class="literal">&quot;prefer_rust&quot;</code></p>
+
+<p><span class="emphasis"><em>Declared by:</em></span></p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td>
+<code class="filename"><a class="filename"  href="https://github.com/NotAShelf/nvf/blob/main/modules/plugins/completion/blink-cmp/blink-cmp.nix" target="_top">
+&lt;nvf/modules/plugins/completion/blink-cmp/blink-cmp.nix&gt;
+</a></code>
+</td></tr>
+</table>
+</dd>
+<dt>
+ <span class="term">
  <a id="opt-vim.autocomplete.blink-cmp.setupOpts.fuzzy.prebuilt_binaries.download"></a><a class="term" href="options.html#opt-vim.autocomplete.blink-cmp.setupOpts.fuzzy.prebuilt_binaries.download"><code class="option">vim.autocomplete.blink-cmp.setupOpts.fuzzy.prebuilt_binaries.download</code>
   </a>
  </span>
 </dt>
 <dd>
-<p>Auto-downloads prebuilt binaries. Do not enable, it doesn’t work on nix</p>
+<p>Auto-downloads prebuilt binaries.</p><p>::: .{warning}
+Do not enable this option, as it does <span class="strong"><strong>not work</strong></span> on Nix!
+:::</p>
 
 <p><span class="emphasis"><em>Type:</em></span>
 boolean</p>
@@ -2815,7 +2916,7 @@ list of string</p>
  </span>
 </dt>
 <dd>
-<p>Settings for completion providers</p>
+<p>Settings for completion providers.</p>
 
 <p><span class="emphasis"><em>Type:</em></span>
 attribute set of (anything)</p>
@@ -2839,10 +2940,13 @@ attribute set of (anything)</p>
  </span>
 </dt>
 <dd>
-<p>module of the provider</p>
+<p>Provider module.</p>
 
 <p><span class="emphasis"><em>Type:</em></span>
-string</p>
+null or string</p>
+
+<p><span class="emphasis"><em>Default:</em></span>
+<code class="literal">null</code></p>
 
 <p><span class="emphasis"><em>Declared by:</em></span></p>
 <table border="0" summary="Simple list" class="simplelist">
@@ -3527,14 +3631,17 @@ list of (null or package or one of “aerial-nvim”, “alpha-nvim”, “base1
 <p><span class="emphasis"><em>Type:</em></span>
 attribute set of (null or string)</p>
 
-<p><span class="emphasis"><em>Default:</em></span>
-<code class="literal">{ }</code></p>
+<p><span class="emphasis"><em>Default:</em></span></p><pre><code class="programlisting">{
+  buffer = &quot;[Buffer]&quot;;
+  nvim-cmp = null;
+  path = &quot;[Path]&quot;;
+}
+</code></pre>
 
 <p><span class="emphasis"><em>Example:</em></span></p><pre><code class="programlisting">{
-  nvim-cmp = null;
   buffer = &quot;[Buffer]&quot;;
+  nvim-cmp = null;
 }
-
 </code></pre>
 
 <p><span class="emphasis"><em>Declared by:</em></span></p>
@@ -21444,7 +21551,7 @@ null or string or list of string</p>
 <p>Lazy-load on event</p>
 
 <p><span class="emphasis"><em>Type:</em></span>
-null or string or list of string or (submodule)</p>
+null or string or (submodule) or list of (string or (submodule))</p>
 
 <p><span class="emphasis"><em>Default:</em></span>
 <code class="literal">null</code></p>
@@ -22106,294 +22213,6 @@ boolean</p>
 
 <p><span class="emphasis"><em>Example:</em></span>
 <code class="literal">true</code></p>
-
-<p><span class="emphasis"><em>Declared by:</em></span></p>
-<table border="0" summary="Simple list" class="simplelist">
-<tr><td>
-<code class="filename"><a class="filename"  href="https://github.com/NotAShelf/nvf/blob/main/modules/plugins/lsp/lspsaga/lspsaga.nix" target="_top">
-&lt;nvf/modules/plugins/lsp/lspsaga/lspsaga.nix&gt;
-</a></code>
-</td></tr>
-</table>
-</dd>
-<dt>
- <span class="term">
- <a id="opt-vim.lsp.lspsaga.mappings.codeAction"></a><a class="term" href="options.html#opt-vim.lsp.lspsaga.mappings.codeAction"><code class="option">vim.lsp.lspsaga.mappings.codeAction</code>
-  </a>
- </span>
-</dt>
-<dd>
-<p>Code action [LSPSaga]</p>
-
-<p><span class="emphasis"><em>Type:</em></span>
-null or string</p>
-
-<p><span class="emphasis"><em>Default:</em></span>
-<code class="literal">&quot;&lt;leader&gt;ca&quot;</code></p>
-
-<p><span class="emphasis"><em>Declared by:</em></span></p>
-<table border="0" summary="Simple list" class="simplelist">
-<tr><td>
-<code class="filename"><a class="filename"  href="https://github.com/NotAShelf/nvf/blob/main/modules/plugins/lsp/lspsaga/lspsaga.nix" target="_top">
-&lt;nvf/modules/plugins/lsp/lspsaga/lspsaga.nix&gt;
-</a></code>
-</td></tr>
-</table>
-</dd>
-<dt>
- <span class="term">
- <a id="opt-vim.lsp.lspsaga.mappings.lspFinder"></a><a class="term" href="options.html#opt-vim.lsp.lspsaga.mappings.lspFinder"><code class="option">vim.lsp.lspsaga.mappings.lspFinder</code>
-  </a>
- </span>
-</dt>
-<dd>
-<p>LSP Finder [LSPSaga]</p>
-
-<p><span class="emphasis"><em>Type:</em></span>
-null or string</p>
-
-<p><span class="emphasis"><em>Default:</em></span>
-<code class="literal">&quot;&lt;leader&gt;lf&quot;</code></p>
-
-<p><span class="emphasis"><em>Declared by:</em></span></p>
-<table border="0" summary="Simple list" class="simplelist">
-<tr><td>
-<code class="filename"><a class="filename"  href="https://github.com/NotAShelf/nvf/blob/main/modules/plugins/lsp/lspsaga/lspsaga.nix" target="_top">
-&lt;nvf/modules/plugins/lsp/lspsaga/lspsaga.nix&gt;
-</a></code>
-</td></tr>
-</table>
-</dd>
-<dt>
- <span class="term">
- <a id="opt-vim.lsp.lspsaga.mappings.nextDiagnostic"></a><a class="term" href="options.html#opt-vim.lsp.lspsaga.mappings.nextDiagnostic"><code class="option">vim.lsp.lspsaga.mappings.nextDiagnostic</code>
-  </a>
- </span>
-</dt>
-<dd>
-<p>Next diagnostic [LSPSaga]</p>
-
-<p><span class="emphasis"><em>Type:</em></span>
-null or string</p>
-
-<p><span class="emphasis"><em>Default:</em></span>
-<code class="literal">&quot;&lt;leader&gt;ln&quot;</code></p>
-
-<p><span class="emphasis"><em>Declared by:</em></span></p>
-<table border="0" summary="Simple list" class="simplelist">
-<tr><td>
-<code class="filename"><a class="filename"  href="https://github.com/NotAShelf/nvf/blob/main/modules/plugins/lsp/lspsaga/lspsaga.nix" target="_top">
-&lt;nvf/modules/plugins/lsp/lspsaga/lspsaga.nix&gt;
-</a></code>
-</td></tr>
-</table>
-</dd>
-<dt>
- <span class="term">
- <a id="opt-vim.lsp.lspsaga.mappings.previewDefinition"></a><a class="term" href="options.html#opt-vim.lsp.lspsaga.mappings.previewDefinition"><code class="option">vim.lsp.lspsaga.mappings.previewDefinition</code>
-  </a>
- </span>
-</dt>
-<dd>
-<p>Preview definition [LSPSaga]</p>
-
-<p><span class="emphasis"><em>Type:</em></span>
-null or string</p>
-
-<p><span class="emphasis"><em>Default:</em></span>
-<code class="literal">&quot;&lt;leader&gt;ld&quot;</code></p>
-
-<p><span class="emphasis"><em>Declared by:</em></span></p>
-<table border="0" summary="Simple list" class="simplelist">
-<tr><td>
-<code class="filename"><a class="filename"  href="https://github.com/NotAShelf/nvf/blob/main/modules/plugins/lsp/lspsaga/lspsaga.nix" target="_top">
-&lt;nvf/modules/plugins/lsp/lspsaga/lspsaga.nix&gt;
-</a></code>
-</td></tr>
-</table>
-</dd>
-<dt>
- <span class="term">
- <a id="opt-vim.lsp.lspsaga.mappings.previousDiagnostic"></a><a class="term" href="options.html#opt-vim.lsp.lspsaga.mappings.previousDiagnostic"><code class="option">vim.lsp.lspsaga.mappings.previousDiagnostic</code>
-  </a>
- </span>
-</dt>
-<dd>
-<p>Previous diagnostic [LSPSaga]</p>
-
-<p><span class="emphasis"><em>Type:</em></span>
-null or string</p>
-
-<p><span class="emphasis"><em>Default:</em></span>
-<code class="literal">&quot;&lt;leader&gt;lp&quot;</code></p>
-
-<p><span class="emphasis"><em>Declared by:</em></span></p>
-<table border="0" summary="Simple list" class="simplelist">
-<tr><td>
-<code class="filename"><a class="filename"  href="https://github.com/NotAShelf/nvf/blob/main/modules/plugins/lsp/lspsaga/lspsaga.nix" target="_top">
-&lt;nvf/modules/plugins/lsp/lspsaga/lspsaga.nix&gt;
-</a></code>
-</td></tr>
-</table>
-</dd>
-<dt>
- <span class="term">
- <a id="opt-vim.lsp.lspsaga.mappings.rename"></a><a class="term" href="options.html#opt-vim.lsp.lspsaga.mappings.rename"><code class="option">vim.lsp.lspsaga.mappings.rename</code>
-  </a>
- </span>
-</dt>
-<dd>
-<p>Rename [LSPSaga]</p>
-
-<p><span class="emphasis"><em>Type:</em></span>
-null or string</p>
-
-<p><span class="emphasis"><em>Default:</em></span>
-<code class="literal">&quot;&lt;leader&gt;lr&quot;</code></p>
-
-<p><span class="emphasis"><em>Declared by:</em></span></p>
-<table border="0" summary="Simple list" class="simplelist">
-<tr><td>
-<code class="filename"><a class="filename"  href="https://github.com/NotAShelf/nvf/blob/main/modules/plugins/lsp/lspsaga/lspsaga.nix" target="_top">
-&lt;nvf/modules/plugins/lsp/lspsaga/lspsaga.nix&gt;
-</a></code>
-</td></tr>
-</table>
-</dd>
-<dt>
- <span class="term">
- <a id="opt-vim.lsp.lspsaga.mappings.renderHoveredDoc"></a><a class="term" href="options.html#opt-vim.lsp.lspsaga.mappings.renderHoveredDoc"><code class="option">vim.lsp.lspsaga.mappings.renderHoveredDoc</code>
-  </a>
- </span>
-</dt>
-<dd>
-<p>Rendered hovered docs [LSPSaga]</p>
-
-<p><span class="emphasis"><em>Type:</em></span>
-null or string</p>
-
-<p><span class="emphasis"><em>Default:</em></span>
-<code class="literal">&quot;&lt;leader&gt;lh&quot;</code></p>
-
-<p><span class="emphasis"><em>Declared by:</em></span></p>
-<table border="0" summary="Simple list" class="simplelist">
-<tr><td>
-<code class="filename"><a class="filename"  href="https://github.com/NotAShelf/nvf/blob/main/modules/plugins/lsp/lspsaga/lspsaga.nix" target="_top">
-&lt;nvf/modules/plugins/lsp/lspsaga/lspsaga.nix&gt;
-</a></code>
-</td></tr>
-</table>
-</dd>
-<dt>
- <span class="term">
- <a id="opt-vim.lsp.lspsaga.mappings.showCursorDiagnostics"></a><a class="term" href="options.html#opt-vim.lsp.lspsaga.mappings.showCursorDiagnostics"><code class="option">vim.lsp.lspsaga.mappings.showCursorDiagnostics</code>
-  </a>
- </span>
-</dt>
-<dd>
-<p>Show cursor diagnostics [LSPSaga]</p>
-
-<p><span class="emphasis"><em>Type:</em></span>
-null or string</p>
-
-<p><span class="emphasis"><em>Default:</em></span>
-<code class="literal">&quot;&lt;leader&gt;lc&quot;</code></p>
-
-<p><span class="emphasis"><em>Declared by:</em></span></p>
-<table border="0" summary="Simple list" class="simplelist">
-<tr><td>
-<code class="filename"><a class="filename"  href="https://github.com/NotAShelf/nvf/blob/main/modules/plugins/lsp/lspsaga/lspsaga.nix" target="_top">
-&lt;nvf/modules/plugins/lsp/lspsaga/lspsaga.nix&gt;
-</a></code>
-</td></tr>
-</table>
-</dd>
-<dt>
- <span class="term">
- <a id="opt-vim.lsp.lspsaga.mappings.showLineDiagnostics"></a><a class="term" href="options.html#opt-vim.lsp.lspsaga.mappings.showLineDiagnostics"><code class="option">vim.lsp.lspsaga.mappings.showLineDiagnostics</code>
-  </a>
- </span>
-</dt>
-<dd>
-<p>Show line diagnostics [LSPSaga]</p>
-
-<p><span class="emphasis"><em>Type:</em></span>
-null or string</p>
-
-<p><span class="emphasis"><em>Default:</em></span>
-<code class="literal">&quot;&lt;leader&gt;ll&quot;</code></p>
-
-<p><span class="emphasis"><em>Declared by:</em></span></p>
-<table border="0" summary="Simple list" class="simplelist">
-<tr><td>
-<code class="filename"><a class="filename"  href="https://github.com/NotAShelf/nvf/blob/main/modules/plugins/lsp/lspsaga/lspsaga.nix" target="_top">
-&lt;nvf/modules/plugins/lsp/lspsaga/lspsaga.nix&gt;
-</a></code>
-</td></tr>
-</table>
-</dd>
-<dt>
- <span class="term">
- <a id="opt-vim.lsp.lspsaga.mappings.signatureHelp"></a><a class="term" href="options.html#opt-vim.lsp.lspsaga.mappings.signatureHelp"><code class="option">vim.lsp.lspsaga.mappings.signatureHelp</code>
-  </a>
- </span>
-</dt>
-<dd>
-<p>Signature help [LSPSaga]</p>
-
-<p><span class="emphasis"><em>Type:</em></span>
-null or string</p>
-
-<p><span class="emphasis"><em>Default:</em></span>
-<code class="literal">&quot;&lt;leader&gt;ls&quot;</code></p>
-
-<p><span class="emphasis"><em>Declared by:</em></span></p>
-<table border="0" summary="Simple list" class="simplelist">
-<tr><td>
-<code class="filename"><a class="filename"  href="https://github.com/NotAShelf/nvf/blob/main/modules/plugins/lsp/lspsaga/lspsaga.nix" target="_top">
-&lt;nvf/modules/plugins/lsp/lspsaga/lspsaga.nix&gt;
-</a></code>
-</td></tr>
-</table>
-</dd>
-<dt>
- <span class="term">
- <a id="opt-vim.lsp.lspsaga.mappings.smartScrollDown"></a><a class="term" href="options.html#opt-vim.lsp.lspsaga.mappings.smartScrollDown"><code class="option">vim.lsp.lspsaga.mappings.smartScrollDown</code>
-  </a>
- </span>
-</dt>
-<dd>
-<p>Smart scroll up [LSPSaga]</p>
-
-<p><span class="emphasis"><em>Type:</em></span>
-null or string</p>
-
-<p><span class="emphasis"><em>Default:</em></span>
-<code class="literal">&quot;&lt;C-b&gt;&quot;</code></p>
-
-<p><span class="emphasis"><em>Declared by:</em></span></p>
-<table border="0" summary="Simple list" class="simplelist">
-<tr><td>
-<code class="filename"><a class="filename"  href="https://github.com/NotAShelf/nvf/blob/main/modules/plugins/lsp/lspsaga/lspsaga.nix" target="_top">
-&lt;nvf/modules/plugins/lsp/lspsaga/lspsaga.nix&gt;
-</a></code>
-</td></tr>
-</table>
-</dd>
-<dt>
- <span class="term">
- <a id="opt-vim.lsp.lspsaga.mappings.smartScrollUp"></a><a class="term" href="options.html#opt-vim.lsp.lspsaga.mappings.smartScrollUp"><code class="option">vim.lsp.lspsaga.mappings.smartScrollUp</code>
-  </a>
- </span>
-</dt>
-<dd>
-<p>Smart scroll up [LSPSaga]</p>
-
-<p><span class="emphasis"><em>Type:</em></span>
-null or string</p>
-
-<p><span class="emphasis"><em>Default:</em></span>
-<code class="literal">&quot;&lt;C-f&gt;&quot;</code></p>
 
 <p><span class="emphasis"><em>Declared by:</em></span></p>
 <table border="0" summary="Simple list" class="simplelist">

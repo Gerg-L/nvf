@@ -9057,15 +9057,66 @@ submodule</p>
 </dd>
 <dt>
  <span class="term">
+ <a id="opt-vim.filetree.nvimTree.setupOpts.renderer.icons.bookmarks_placement"></a><a class="term" href="options.html#opt-vim.filetree.nvimTree.setupOpts.renderer.icons.bookmarks_placement"><code class="option">vim.filetree.nvimTree.setupOpts.renderer.icons.bookmarks_placement</code>
+  </a>
+ </span>
+</dt>
+<dd>
+<p>Place where the bookmark icons will be rendered.
+<code class="literal">signcolumn</code> requires <code class="literal">view.signcolumn</code> to be enabled.</p>
+
+<p><span class="emphasis"><em>Type:</em></span>
+one of “before”, “after”, “signcolumn”, “right_align”</p>
+
+<p><span class="emphasis"><em>Default:</em></span>
+<code class="literal">&quot;after&quot;</code></p>
+
+<p><span class="emphasis"><em>Declared by:</em></span></p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td>
+<code class="filename"><a class="filename"  href="https://github.com/NotAShelf/nvf/blob/main/modules/plugins/filetree/nvimtree/nvimtree.nix" target="_top">
+&lt;nvf/modules/plugins/filetree/nvimtree/nvimtree.nix&gt;
+</a></code>
+</td></tr>
+</table>
+</dd>
+<dt>
+ <span class="term">
+ <a id="opt-vim.filetree.nvimTree.setupOpts.renderer.icons.diagnostics_placement"></a><a class="term" href="options.html#opt-vim.filetree.nvimTree.setupOpts.renderer.icons.diagnostics_placement"><code class="option">vim.filetree.nvimTree.setupOpts.renderer.icons.diagnostics_placement</code>
+  </a>
+ </span>
+</dt>
+<dd>
+<p>Place where the diagnostics icons will be rendered.
+<code class="literal">signcolumn</code> requires <code class="literal">view.signcolumn</code> to be enabled.</p>
+
+<p><span class="emphasis"><em>Type:</em></span>
+one of “before”, “after”, “signcolumn”, “right_align”</p>
+
+<p><span class="emphasis"><em>Default:</em></span>
+<code class="literal">&quot;after&quot;</code></p>
+
+<p><span class="emphasis"><em>Declared by:</em></span></p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td>
+<code class="filename"><a class="filename"  href="https://github.com/NotAShelf/nvf/blob/main/modules/plugins/filetree/nvimtree/nvimtree.nix" target="_top">
+&lt;nvf/modules/plugins/filetree/nvimtree/nvimtree.nix&gt;
+</a></code>
+</td></tr>
+</table>
+</dd>
+<dt>
+ <span class="term">
  <a id="opt-vim.filetree.nvimTree.setupOpts.renderer.icons.git_placement"></a><a class="term" href="options.html#opt-vim.filetree.nvimTree.setupOpts.renderer.icons.git_placement"><code class="option">vim.filetree.nvimTree.setupOpts.renderer.icons.git_placement</code>
   </a>
  </span>
 </dt>
 <dd>
-<p>Place where the git icons will be rendered. <code class="literal">signcolumn</code> requires <code class="literal">view.signcolumn</code> to be enabled.</p>
+<p>Place where the git icons will be rendered.
+<code class="literal">signcolumn</code> requires <code class="literal">view.signcolumn</code> to be enabled.</p>
 
 <p><span class="emphasis"><em>Type:</em></span>
-one of “before”, “after”, “signcolumn”</p>
+one of “before”, “after”, “signcolumn”, “right_align”</p>
 
 <p><span class="emphasis"><em>Default:</em></span>
 <code class="literal">&quot;before&quot;</code></p>
@@ -9244,15 +9295,41 @@ string</p>
 </dd>
 <dt>
  <span class="term">
+ <a id="opt-vim.filetree.nvimTree.setupOpts.renderer.icons.hidden_placement"></a><a class="term" href="options.html#opt-vim.filetree.nvimTree.setupOpts.renderer.icons.hidden_placement"><code class="option">vim.filetree.nvimTree.setupOpts.renderer.icons.hidden_placement</code>
+  </a>
+ </span>
+</dt>
+<dd>
+<p>Place where the hidden icons will be rendered.
+<code class="literal">signcolumn</code> requires <code class="literal">view.signcolumn</code> to be enabled.</p>
+
+<p><span class="emphasis"><em>Type:</em></span>
+one of “before”, “after”, “signcolumn”, “right_align”</p>
+
+<p><span class="emphasis"><em>Default:</em></span>
+<code class="literal">&quot;after&quot;</code></p>
+
+<p><span class="emphasis"><em>Declared by:</em></span></p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td>
+<code class="filename"><a class="filename"  href="https://github.com/NotAShelf/nvf/blob/main/modules/plugins/filetree/nvimtree/nvimtree.nix" target="_top">
+&lt;nvf/modules/plugins/filetree/nvimtree/nvimtree.nix&gt;
+</a></code>
+</td></tr>
+</table>
+</dd>
+<dt>
+ <span class="term">
  <a id="opt-vim.filetree.nvimTree.setupOpts.renderer.icons.modified_placement"></a><a class="term" href="options.html#opt-vim.filetree.nvimTree.setupOpts.renderer.icons.modified_placement"><code class="option">vim.filetree.nvimTree.setupOpts.renderer.icons.modified_placement</code>
   </a>
  </span>
 </dt>
 <dd>
-<p>Place where the modified icons will be rendered. <code class="literal">signcolumn</code> requires <code class="literal">view.signcolumn</code> to be enabled.</p>
+<p>Place where the modified icons will be rendered.
+<code class="literal">signcolumn</code> requires <code class="literal">view.signcolumn</code> to be enabled.</p>
 
 <p><span class="emphasis"><em>Type:</em></span>
-one of “before”, “after”, “signcolumn”</p>
+one of “before”, “after”, “signcolumn”, “right_align”</p>
 
 <p><span class="emphasis"><em>Default:</em></span>
 <code class="literal">&quot;after&quot;</code></p>
@@ -12665,6 +12742,15 @@ boolean</p>
 
 <p><span class="emphasis"><em>Default:</em></span>
 <code class="literal">false</code></p>
+
+<p><span class="emphasis"><em>Declared by:</em></span></p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td>
+<code class="filename"><a class="filename"  href="https://github.com/NotAShelf/nvf/blob/main/modules/plugins/languages" target="_top">
+&lt;nvf/modules/plugins/languages&gt;
+</a></code>
+</td></tr>
+</table>
 </dd>
 <dt>
  <span class="term">
@@ -12680,6 +12766,15 @@ boolean</p>
 
 <p><span class="emphasis"><em>Default:</em></span>
 <code class="literal">false</code></p>
+
+<p><span class="emphasis"><em>Declared by:</em></span></p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td>
+<code class="filename"><a class="filename"  href="https://github.com/NotAShelf/nvf/blob/main/modules/plugins/languages" target="_top">
+&lt;nvf/modules/plugins/languages&gt;
+</a></code>
+</td></tr>
+</table>
 </dd>
 <dt>
  <span class="term">
@@ -12695,21 +12790,15 @@ boolean</p>
 
 <p><span class="emphasis"><em>Default:</em></span>
 <code class="literal">false</code></p>
-</dd>
-<dt>
- <span class="term">
- <a id="opt-vim.languages.enableLSP"></a><a class="term" href="options.html#opt-vim.languages.enableLSP"><code class="option">vim.languages.enableLSP</code>
-  </a>
- </span>
-</dt>
-<dd>
-<p>Turn on LSP for enabled languages by default</p>
 
-<p><span class="emphasis"><em>Type:</em></span>
-boolean</p>
-
-<p><span class="emphasis"><em>Default:</em></span>
-<code class="literal">false</code></p>
+<p><span class="emphasis"><em>Declared by:</em></span></p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td>
+<code class="filename"><a class="filename"  href="https://github.com/NotAShelf/nvf/blob/main/modules/plugins/languages" target="_top">
+&lt;nvf/modules/plugins/languages&gt;
+</a></code>
+</td></tr>
+</table>
 </dd>
 <dt>
  <span class="term">
@@ -12725,6 +12814,15 @@ boolean</p>
 
 <p><span class="emphasis"><em>Default:</em></span>
 <code class="literal">false</code></p>
+
+<p><span class="emphasis"><em>Declared by:</em></span></p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td>
+<code class="filename"><a class="filename"  href="https://github.com/NotAShelf/nvf/blob/main/modules/plugins/languages" target="_top">
+&lt;nvf/modules/plugins/languages&gt;
+</a></code>
+</td></tr>
+</table>
 </dd>
 <dt>
  <span class="term">
@@ -22891,7 +22989,11 @@ one of “relative”, “number”, “relNumber”, “none”</p>
  </span>
 </dt>
 <dd>
-<p>Whether to enable LSP, also enabled automatically through null-ls and lspconfig options.</p>
+<p>Whether to enable global LSP functionality for Neovim.</p><p>This option controls whether to enable LSP functionality within modules under
+<code class="option">vim.languages</code>. You do not need to set this to <code class="literal">true</code> for language
+servers defined in <code class="option">vim.lsp.servers</code> to take effect, since they are
+enabled automatically.
+.</p>
 
 <p><span class="emphasis"><em>Type:</em></span>
 boolean</p>
@@ -22905,8 +23007,8 @@ boolean</p>
 <p><span class="emphasis"><em>Declared by:</em></span></p>
 <table border="0" summary="Simple list" class="simplelist">
 <tr><td>
-<code class="filename"><a class="filename"  href="https://github.com/NotAShelf/nvf/blob/main/modules/plugins/lsp/module.nix" target="_top">
-&lt;nvf/modules/plugins/lsp/module.nix&gt;
+<code class="filename"><a class="filename"  href="https://github.com/NotAShelf/nvf/blob/main/modules/neovim/init/lsp.nix" target="_top">
+&lt;nvf/modules/neovim/init/lsp.nix&gt;
 </a></code>
 </td></tr>
 </table>
@@ -24474,10 +24576,10 @@ list of string</p>
  </span>
 </dt>
 <dd>
-<p>LSP configurations that will be managed using <code class="literal">vim.lsp.config()</code> and
-related utilities added in Neovim 0.11. LSPs defined here will be
-added to the resulting <code class="filename">init.lua</code> using <code class="literal">vim.lsp.config</code> and
-enabled through <code class="literal">vim.lsp.enable</code> below the configuration table.</p><p>You may review the generated configuration by running <span class="command"><strong>nvf-print-config</strong></span>
+<p>LSP configurations that will be managed using <code class="literal">vim.lsp.config()</code> and related
+utilities added in Neovim 0.11. LSPs defined here will be added to the
+resulting <code class="filename">init.lua</code> using <code class="literal">vim.lsp.config</code> and enabled through
+<code class="literal">vim.lsp.enable()</code> API from Neovim below the configuration table.</p><p>You may review the generated configuration by running <span class="command"><strong>nvf-print-config</strong></span>
 in a shell. Please see <span class="command"><strong>:help lsp-config</strong></span> for more details
 on the underlying API.</p>
 
@@ -38987,7 +39089,7 @@ boolean</p>
 <p>Whether to always display the breadcrumbs component
 on winbar.</p><div class="note"><h3 class="title">Note</h3><p>This will pass <code class="literal">draw_empty</code> to the <code class="literal">nvim_navic</code> winbar
 component, which causes the component to be drawn even
-if it’s empty</p></div>
+if it’s empty.</p></div>
 
 <p><span class="emphasis"><em>Type:</em></span>
 boolean</p>
@@ -39041,7 +39143,7 @@ boolean</p>
  </span>
 </dt>
 <dd>
-<p>insert at end of name</p>
+<p>Insert at the end of name.</p>
 
 <p><span class="emphasis"><em>Type:</em></span>
 string</p>
@@ -39065,7 +39167,7 @@ string</p>
  </span>
 </dt>
 <dd>
-<p>insert at end of scope</p>
+<p>Insert at the end of scope.</p>
 
 <p><span class="emphasis"><em>Type:</em></span>
 string</p>
@@ -39089,7 +39191,7 @@ string</p>
  </span>
 </dt>
 <dd>
-<p>keybinding to navigate to the child node</p>
+<p>Navigate to the child node.</p>
 
 <p><span class="emphasis"><em>Type:</em></span>
 string</p>
@@ -39113,7 +39215,7 @@ string</p>
  </span>
 </dt>
 <dd>
-<p>keybinding to close Navbuddy UI</p>
+<p>Close and return the cursor to its original location.</p>
 
 <p><span class="emphasis"><em>Type:</em></span>
 string</p>
@@ -39137,7 +39239,7 @@ string</p>
  </span>
 </dt>
 <dd>
-<p>comment the node</p>
+<p>Comment the node.</p>
 
 <p><span class="emphasis"><em>Type:</em></span>
 string</p>
@@ -39161,7 +39263,7 @@ string</p>
  </span>
 </dt>
 <dd>
-<p>delete the node</p>
+<p>Delete the node.</p>
 
 <p><span class="emphasis"><em>Type:</em></span>
 string</p>
@@ -39185,7 +39287,7 @@ string</p>
  </span>
 </dt>
 <dd>
-<p>create a new fold</p>
+<p>Create a new fold of the node.</p>
 
 <p><span class="emphasis"><em>Type:</em></span>
 string</p>
@@ -39209,7 +39311,7 @@ string</p>
  </span>
 </dt>
 <dd>
-<p>delete the current fold</p>
+<p>Delete the current fold of the node.</p>
 
 <p><span class="emphasis"><em>Type:</em></span>
 string</p>
@@ -39233,7 +39335,7 @@ string</p>
  </span>
 </dt>
 <dd>
-<p>open mapping help window</p>
+<p>Open the mappings help window.</p>
 
 <p><span class="emphasis"><em>Type:</em></span>
 string</p>
@@ -39252,12 +39354,36 @@ string</p>
 </dd>
 <dt>
  <span class="term">
+ <a id="opt-vim.ui.breadcrumbs.navbuddy.mappings.hsplit"></a><a class="term" href="options.html#opt-vim.ui.breadcrumbs.navbuddy.mappings.hsplit"><code class="option">vim.ui.breadcrumbs.navbuddy.mappings.hsplit</code>
+  </a>
+ </span>
+</dt>
+<dd>
+<p>Open the node in a horizontal split.</p>
+
+<p><span class="emphasis"><em>Type:</em></span>
+string</p>
+
+<p><span class="emphasis"><em>Default:</em></span>
+<code class="literal">&quot;&lt;C-s&gt;&quot;</code></p>
+
+<p><span class="emphasis"><em>Declared by:</em></span></p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td>
+<code class="filename"><a class="filename"  href="https://github.com/NotAShelf/nvf/blob/main/modules/plugins/ui/breadcrumbs/breadcrumbs.nix" target="_top">
+&lt;nvf/modules/plugins/ui/breadcrumbs/breadcrumbs.nix&gt;
+</a></code>
+</td></tr>
+</table>
+</dd>
+<dt>
+ <span class="term">
  <a id="opt-vim.ui.breadcrumbs.navbuddy.mappings.insertName"></a><a class="term" href="options.html#opt-vim.ui.breadcrumbs.navbuddy.mappings.insertName"><code class="option">vim.ui.breadcrumbs.navbuddy.mappings.insertName</code>
   </a>
  </span>
 </dt>
 <dd>
-<p>insert at start of name</p>
+<p>Insert at the start of name.</p>
 
 <p><span class="emphasis"><em>Type:</em></span>
 string</p>
@@ -39281,7 +39407,7 @@ string</p>
  </span>
 </dt>
 <dd>
-<p>insert at start of scope</p>
+<p>Insert at the start of scope.</p>
 
 <p><span class="emphasis"><em>Type:</em></span>
 string</p>
@@ -39305,7 +39431,7 @@ string</p>
  </span>
 </dt>
 <dd>
-<p>move focused node down</p>
+<p>Move the node down.</p>
 
 <p><span class="emphasis"><em>Type:</em></span>
 string</p>
@@ -39329,7 +39455,7 @@ string</p>
  </span>
 </dt>
 <dd>
-<p>move focused node up</p>
+<p>Move the node up.</p>
 
 <p><span class="emphasis"><em>Type:</em></span>
 string</p>
@@ -39353,7 +39479,7 @@ string</p>
  </span>
 </dt>
 <dd>
-<p>keybinding to navigate to the next sibling node</p>
+<p>Navigate to the next sibling node.</p>
 
 <p><span class="emphasis"><em>Type:</em></span>
 string</p>
@@ -39377,7 +39503,7 @@ string</p>
  </span>
 </dt>
 <dd>
-<p>keybinding to navigate to the parent node</p>
+<p>Navigate to the parent node.</p>
 
 <p><span class="emphasis"><em>Type:</em></span>
 string</p>
@@ -39401,7 +39527,7 @@ string</p>
  </span>
 </dt>
 <dd>
-<p>keybinding to navigate to the previous sibling node</p>
+<p>Navigate to the previous sibling node.</p>
 
 <p><span class="emphasis"><em>Type:</em></span>
 string</p>
@@ -39425,7 +39551,7 @@ string</p>
  </span>
 </dt>
 <dd>
-<p>rename the node</p>
+<p>Rename the node.</p>
 
 <p><span class="emphasis"><em>Type:</em></span>
 string</p>
@@ -39449,7 +39575,7 @@ string</p>
  </span>
 </dt>
 <dd>
-<p>keybinding to navigate to the root node</p>
+<p>Navigate to the root node.</p>
 
 <p><span class="emphasis"><em>Type:</em></span>
 string</p>
@@ -39473,7 +39599,7 @@ string</p>
  </span>
 </dt>
 <dd>
-<p>goto selected symbol</p>
+<p>Goto the node.</p>
 
 <p><span class="emphasis"><em>Type:</em></span>
 string</p>
@@ -39497,7 +39623,7 @@ string</p>
  </span>
 </dt>
 <dd>
-<p>fuzzy finder at current level</p>
+<p>Start fuzzy finder at the current level.</p>
 
 <p><span class="emphasis"><em>Type:</em></span>
 string</p>
@@ -39516,12 +39642,36 @@ string</p>
 </dd>
 <dt>
  <span class="term">
+ <a id="opt-vim.ui.breadcrumbs.navbuddy.mappings.togglePreview"></a><a class="term" href="options.html#opt-vim.ui.breadcrumbs.navbuddy.mappings.togglePreview"><code class="option">vim.ui.breadcrumbs.navbuddy.mappings.togglePreview</code>
+  </a>
+ </span>
+</dt>
+<dd>
+<p>Toggle the preview.</p>
+
+<p><span class="emphasis"><em>Type:</em></span>
+string</p>
+
+<p><span class="emphasis"><em>Default:</em></span>
+<code class="literal">&quot;s&quot;</code></p>
+
+<p><span class="emphasis"><em>Declared by:</em></span></p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td>
+<code class="filename"><a class="filename"  href="https://github.com/NotAShelf/nvf/blob/main/modules/plugins/ui/breadcrumbs/breadcrumbs.nix" target="_top">
+&lt;nvf/modules/plugins/ui/breadcrumbs/breadcrumbs.nix&gt;
+</a></code>
+</td></tr>
+</table>
+</dd>
+<dt>
+ <span class="term">
  <a id="opt-vim.ui.breadcrumbs.navbuddy.mappings.visualName"></a><a class="term" href="options.html#opt-vim.ui.breadcrumbs.navbuddy.mappings.visualName"><code class="option">vim.ui.breadcrumbs.navbuddy.mappings.visualName</code>
   </a>
  </span>
 </dt>
 <dd>
-<p>visual selection of name</p>
+<p>Select the name visually.</p>
 
 <p><span class="emphasis"><em>Type:</em></span>
 string</p>
@@ -39545,7 +39695,7 @@ string</p>
  </span>
 </dt>
 <dd>
-<p>visual selection of scope</p>
+<p>Select the scope visually.</p>
 
 <p><span class="emphasis"><em>Type:</em></span>
 string</p>
@@ -39564,12 +39714,36 @@ string</p>
 </dd>
 <dt>
  <span class="term">
+ <a id="opt-vim.ui.breadcrumbs.navbuddy.mappings.vsplit"></a><a class="term" href="options.html#opt-vim.ui.breadcrumbs.navbuddy.mappings.vsplit"><code class="option">vim.ui.breadcrumbs.navbuddy.mappings.vsplit</code>
+  </a>
+ </span>
+</dt>
+<dd>
+<p>Open the node in a vertical split.</p>
+
+<p><span class="emphasis"><em>Type:</em></span>
+string</p>
+
+<p><span class="emphasis"><em>Default:</em></span>
+<code class="literal">&quot;&lt;C-v&gt;&quot;</code></p>
+
+<p><span class="emphasis"><em>Declared by:</em></span></p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td>
+<code class="filename"><a class="filename"  href="https://github.com/NotAShelf/nvf/blob/main/modules/plugins/ui/breadcrumbs/breadcrumbs.nix" target="_top">
+&lt;nvf/modules/plugins/ui/breadcrumbs/breadcrumbs.nix&gt;
+</a></code>
+</td></tr>
+</table>
+</dd>
+<dt>
+ <span class="term">
  <a id="opt-vim.ui.breadcrumbs.navbuddy.mappings.yankName"></a><a class="term" href="options.html#opt-vim.ui.breadcrumbs.navbuddy.mappings.yankName"><code class="option">vim.ui.breadcrumbs.navbuddy.mappings.yankName</code>
   </a>
  </span>
 </dt>
 <dd>
-<p>yank the name to system clipboard</p>
+<p>Yank the name to system clipboard.</p>
 
 <p><span class="emphasis"><em>Type:</em></span>
 string</p>
@@ -39593,7 +39767,7 @@ string</p>
  </span>
 </dt>
 <dd>
-<p>yank the scope to system clipboard</p>
+<p>Yank the scope to system clipboard.</p>
 
 <p><span class="emphasis"><em>Type:</em></span>
 string</p>
@@ -40214,7 +40388,7 @@ string</p>
  </span>
 </dt>
 <dd>
-<p>Whether to attach to LSP server manually</p>
+<p>Whether to attach to LSP server manually.</p>
 
 <p><span class="emphasis"><em>Type:</em></span>
 boolean</p>
@@ -40238,7 +40412,7 @@ boolean</p>
  </span>
 </dt>
 <dd>
-<p>list of lsp server names in order of preference</p>
+<p>The preference list ranking LSP servers.</p>
 
 <p><span class="emphasis"><em>Type:</em></span>
 null or (list of string)</p>
@@ -40355,7 +40529,7 @@ string</p>
  </span>
 </dt>
 <dd>
-<p>keep the current node in focus on the source buffer</p>
+<p>Whether to keep the current node in focus in the source buffer.</p>
 
 <p><span class="emphasis"><em>Type:</em></span>
 boolean</p>
@@ -40379,7 +40553,7 @@ boolean</p>
  </span>
 </dt>
 <dd>
-<p>highlight the currently focused node</p>
+<p>Whether to highlight the currently focused node in the source buffer.</p>
 
 <p><span class="emphasis"><em>Type:</em></span>
 boolean</p>
@@ -40403,7 +40577,7 @@ boolean</p>
  </span>
 </dt>
 <dd>
-<p>reorient buffer after changing nodes</p>
+<p>The mode for reorienting the source buffer after moving nodes.</p>
 
 <p><span class="emphasis"><em>Type:</em></span>
 one of “smart”, “top”, “mid”, “none”</p>
@@ -40427,7 +40601,7 @@ one of “smart”, “top”, “mid”, “none”</p>
  </span>
 </dt>
 <dd>
-<p>scrolloff value when navbuddy is open</p>
+<p>The scrolloff value in the source buffer when Navbuddy is open.</p>
 
 <p><span class="emphasis"><em>Type:</em></span>
 null or signed integer</p>
@@ -40451,7 +40625,7 @@ null or signed integer</p>
  </span>
 </dt>
 <dd>
-<p>use default Navbuddy keybindings (disables user-specified keybinds)</p>
+<p>Add the default Navbuddy keybindings in addition to the keybinding added by this module.</p>
 
 <p><span class="emphasis"><em>Type:</em></span>
 boolean</p>
@@ -40475,7 +40649,7 @@ boolean</p>
  </span>
 </dt>
 <dd>
-<p>border style to use</p>
+<p>The border style to use.</p>
 
 <p><span class="emphasis"><em>Type:</em></span>
 one of “none”, “single”, “double”, “rounded”, “solid”, “shadow” or list of (string or list of string)</p>
@@ -40499,7 +40673,7 @@ one of “none”, “single”, “double”, “rounded”, “solid”, “sh
  </span>
 </dt>
 <dd>
-<p>Scrolloff value within navbuddy window</p>
+<p>The scrolloff value within a navbuddy window.</p>
 
 <p><span class="emphasis"><em>Type:</em></span>
 null or signed integer</p>
@@ -40523,7 +40697,7 @@ null or signed integer</p>
  </span>
 </dt>
 <dd>
-<p>border style to use for the left section of Navbuddy UI</p>
+<p>The border style to use for the left section of the Navbuddy UI.</p>
 
 <p><span class="emphasis"><em>Type:</em></span>
 one of “none”, “single”, “double”, “rounded”, “solid”, “shadow” or list of (string or list of string)</p>
@@ -40547,7 +40721,7 @@ one of “none”, “single”, “double”, “rounded”, “solid”, “sh
  </span>
 </dt>
 <dd>
-<p>border style to use for the middle section of Navbuddy UI</p>
+<p>The border style to use for the middle section of the Navbuddy UI.</p>
 
 <p><span class="emphasis"><em>Type:</em></span>
 one of “none”, “single”, “double”, “rounded”, “solid”, “shadow” or list of (string or list of string)</p>
@@ -40571,7 +40745,7 @@ one of “none”, “single”, “double”, “rounded”, “solid”, “sh
  </span>
 </dt>
 <dd>
-<p>border style to use for the right section of Navbuddy UI</p>
+<p>The border style to use for the right section of the Navbuddy UI.</p>
 
 <p><span class="emphasis"><em>Type:</em></span>
 one of “none”, “single”, “double”, “rounded”, “solid”, “shadow” or list of (string or list of string)</p>
@@ -40595,7 +40769,7 @@ one of “none”, “single”, “double”, “rounded”, “solid”, “sh
  </span>
 </dt>
 <dd>
-<p>display mode of the preview on the right section</p>
+<p>The display mode of the preview on the right section.</p>
 
 <p><span class="emphasis"><em>Type:</em></span>
 one of “leaf”, “always”, “never”</p>

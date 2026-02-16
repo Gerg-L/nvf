@@ -1840,6 +1840,12 @@ settings (nvf's <a class="option-reference" href="options.html#option-vim-keymap
 </ul>
 </li>
 </ul>
+<p><a href="https://github.com/snoweuph">Snoweuph</a></p>
+<ul>
+<li>Fix <code>vim.assistant.codecompanion-nvim.setupOpts.display.diff.provider</code> to only
+allow valid options. <code>default</code> is no longer valid. <code>inline</code> and <code>split</code> are
+two new valid options.</li>
+</ul>
 <h2 id="sec-release-0-9-changelog">Changelog</h2>
 <p><a href="https://github.com/taylrfnt">taylrfnt</a></p>
 <ul>
@@ -1861,6 +1867,10 @@ following:</p>
 <li>Attempt to adapt nvim-treesitter to (breaking) Nixpkgs changes. Some
 treesitter grammars were changed to prefer <code>grammarPlugins</code> over
 <code>builtGrammars</code>.</li>
+</ul>
+<p><a href="https://github.com/notashelf">NotAShelf</a>:</p>
+<ul>
+<li>Lazyload noice.nvim and nvim-web-devicons on <code>DeferredUIEnter</code></li>
 </ul>
 <p><a href="https://github.com/jfeo">jfeo</a>:</p>
 <ul>
@@ -1991,12 +2001,42 @@ highlighting only).</p>
 <li>
 <p>Added <a href="https://golangci-lint.run/"><code>golangci-lint</code></a> for more diagnostics.</p>
 </li>
+<li>
+<p>Added Makefile support via <code>languages.make</code>.</p>
+</li>
+<li>
+<p>Added Debugging support to <code>languages.php</code>.</p>
+</li>
+<li>
+<p>Added Formatting support to <code>languages.php</code> via
+<a href="https://github.com/PHP-CS-Fixer/PHP-CS-Fixer">PHP-CS-Fixer</a>.</p>
+</li>
+<li>
+<p>Didn't Add
+<a href="https://github.com/NotAShelf/syntax-gaslighting.nvim"><code>syntax-gaslighting</code></a>,
+you're crazy.</p>
+</li>
 </ul>
 <p><a href="https://github.com/vagahbond">vagahbond</a>: [codewindow.nvim]:
 <a href="https://github.com/gorbit99/codewindow.nvim">https://github.com/gorbit99/codewindow.nvim</a></p>
 <ul>
 <li>Add [codewindow.nvim] plugin in <code>vim.assistant.codewindow</code> with <code>enable</code> and
 <code>setupOpts</code></li>
+</ul>
+<p><a href="https://github.com/irobot">irobot</a>:</p>
+<ul>
+<li>Fix non-functional <code>vim.keymaps.*.noremap</code>. Now, setting it to false is
+equivalent to <code>:lua vim.keymap.set(..., { remap = true })</code></li>
+</ul>
+<p><a href="https://github.com/kazimazi">kazimazi</a>:</p>
+<ul>
+<li>Added <a href="https://github.com/MagicDuck/grug-far.nvim"><code>grug-far.nvim</code></a> the find
+and replace tool for neovim.</li>
+<li>Fix lsp <code>client.supports_method</code> deprecation warning in nvim v0.12.</li>
+</ul>
+<p><a href="https://github.com/Ladas552">Ladas552</a></p>
+<ul>
+<li>Changed <code>withRuby</code> to not be enabled by default</li>
 </ul>
 <!-- vim: set textwidth=80: -->
 </body></html></main>
